@@ -57,9 +57,11 @@ namespace std{
 	using ::wcstombs;
 #endif
 
+#ifndef ARDUINO
 	inline long abs(long i){
 		return labs(i);
 	}
+#endif
 
 	inline ldiv_t div(long i, long j){
 		return ldiv(i, j);
